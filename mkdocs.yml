@@ -1,0 +1,141 @@
+# Project information
+site_name: "Digital Developer Conference: Hybrid Cloud Labs"
+site_url: https://ibm.github.io/ddc-hybrid-cloud-labs
+site_author: IBM Developer
+
+# Repository
+repo_name: ddc-hybrid-cloud-labs
+repo_url: https://github.com/ibm/ddc-hybrid-cloud-labs
+edit_uri: edit/master/docs
+
+# Navigation
+nav:
+  - Welcome:
+    - About the workshop: README.md
+    - Pre-work: pre-work/README.md
+  - Lab 1. Identity Management:
+    - Introduction: appid/identity-management.md
+    - About Lab 1: appid/lab1/README.md
+    - Clone the repo: appid/clone-the-repo.md
+    - Creating App ID in IBM Cloud: appid/creating-app-id.md
+    - Building the front end service: appid/building-front-end.md
+    - Deploying to OpenShift: appid/deploying-to-openshift.md
+    - Test the Simulator: appid/test-the-simulator.md
+  - Lab 2. Operators:
+    - Introduction: operators/README.md
+    - About Lab 2: operators/lab2/README.md
+    - Install the PostgreSQL Operator: operators/lab2_install.md
+    - Create an instance of a database: operators/lab2_create.md
+    - Load the schema: operators/lab2_load.md
+    - Expose and verify: operators/lab2_expose.md
+  - Lab 3. Microservices:
+    - Introduction: microservices/introduction.md
+    - About Lab 3: microservices/lab3/README.md
+    - Part 1: microservices/part1.md
+    - Part 2: microservices/part2.md
+  - Lab 3B. Microservices (OSS):
+    - About Lab 3B: oss/README.md
+    - Database setup: oss/pg_full.md
+    - Part 1: oss/part1.md
+    - Part 2: oss/part2.md
+  - Lab 4. Serverless:
+    - Introduction: serverless/introduction/example-bank-app-architecture.md
+    - Serverless: serverless/introduction/serverless.md
+    - Prerequisites: serverless/introduction/prerequisites.md
+    - Quick Install: serverless/introduction/quick-install-microservices-lab.md
+    - About Lab 4: serverless/lab/README.md
+    - Installing OpenShift Serverless: serverless/lab/installing-openshift-serverless.md
+    - Installing Knative Serving: serverless/lab/installing-knative-serving.md
+    - Clone the repo: serverless/lab/clone-the-repo.md
+    - Create an admin scoped user: serverless/lab/create-an-admin-scoped-user.md
+    - Building the example serverless application: serverless/lab/building-the-example-serverless-application.md
+    - Configure Deployment file: serverless/lab/configure-deployment-file.md
+    - Deploying to OpenShift Serverless: serverless/lab/deploying-to-openshift-serverless.md
+    - Test the Serverless App: serverless/lab/test-the-serverless-app.md
+    - Modify Serverless App: serverless/lab/modify-serverless-app.md
+    - Conclusion: serverless/lab/conclusion.md
+  - Lab 5. Service Mesh:
+    - Service Mesh Lab: mesh-lab/lab5.md
+  - Lab 6. Pipelines (Tekton):
+    - What is tekton?: tekton/intro.md
+    - CI/CD: tekton/tooling.md
+    - Explain tasks and pipelines: tekton/tasks.md
+    - About Lab 6: tekton/lab6/README.md
+    - Cluster Setup: tekton/lab6/setup.md
+    - Install Pipeline: tekton/lab6.md
+
+## DO NOT CHANGE BELOW THIS LINE
+
+# Copyright
+copyright: Copyright &copy; 2020 IBM Developer
+
+# Theme
+theme:
+  name: material
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
+  icon:
+    logo: material/library
+  features:
+    - navigation.tabs
+    #- navigation.instant
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+
+# Plugins
+plugins:
+  - search
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ibm
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/ibmdeveloper
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/ibm/
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/user/developerworks
+    - icon: fontawesome/brands/dev
+      link: https://dev.to/ibmdeveloper
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
