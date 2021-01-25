@@ -1,2 +1,5 @@
-# ddc-hybrid-cloud-labs
-underlying repo for the Digital Developer Conference: Hybrid Cloud lab track gitbook
+# Digital Developer Conferece: Hybrid Cloud Labs
+
+See the workshop at the URL below:
+
+<https://ibm.github.io/ddc-hybrid-cloud-labs>
